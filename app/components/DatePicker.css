@@ -1,0 +1,61 @@
+.custom-date-picker {
+    position: relative;
+}
+
+.custom-date-picker .input-date {
+    width: 100%;
+    height: 25px;
+    border-color: var(--color-grey);
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 35px;
+}
+
+.calendar {
+    position: absolute;
+    border: 1px solid var(--color-grey);
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: white;
+}
+
+.calendar .date-controls {
+    display: flex;
+}
+
+.calendar .date-controls .button-select {
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    color: var(--color-light);
+}
+
+.calendar .date-controls .button-select:hover {
+    color: var(--color-primary);
+}
+
+.calendar-header {
+    display: flex;
+    margin: 10px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 12px;
+}
+
+.day {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.day.selected-day {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/*# sourceMappingURL=DatePicker.css.map */
