@@ -20,15 +20,15 @@ export default function RootLayout({
             <body>
 
                 <div className="flex min-h-screen">
-                    <aside className="w-64 bg-gray-900 text-gray-200">
+                    <aside className="w-64 bg-gray-900 text-gray-200 fixed min-h-screen">
                         <div className="p-4">
                             <h2 className="text-2xl font-semibold text-white">Iconic UI</h2>
                         </div>
                         <nav className="p-4">
                             <ul>
                                 <li className="mb-4">
-                                    <a href="/docs/inicio" className="block text-gray-400 hover:text-white">Inicio</a>
-                                </li>
+                                    <a href="/" className="block text-gray-400 hover:text-white">Inicio</a>
+                                </li>                                
                                 <li className="mb-4">
                                     <a href="/docs/button" className="block text-gray-400 hover:text-white">Button</a>
                                 </li>
@@ -42,7 +42,7 @@ export default function RootLayout({
                         </nav>
                     </aside>
 
-                    <main className="flex-1 p-8 bg-slate-700">
+                    <main className="flex-1 p-8 bg-slate-700 ps-72">
                         <div className="rounded-lg shadow">
                             {children}
                         </div>
